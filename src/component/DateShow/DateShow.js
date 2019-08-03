@@ -1,9 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const DatePart=styled.div`
-text-align:center;
-`;
+import styles from './DateShow.css';
 
 export default class DateShow extends React.Component{
     constructor(props){
@@ -17,9 +13,9 @@ export default class DateShow extends React.Component{
 
     render() {
         return (
-            <DatePart>
+            <div className={styles.main}>
                 {this.state.year}.{this.state.month}
-            </DatePart>
+            </div>
         );
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import Block from './Block'
+import Block from './Block/Block';
+import styles from './Calendar.css'
 
 export default class Calendar extends React.Component{
     render() {
@@ -9,7 +10,9 @@ export default class Calendar extends React.Component{
             Blocks.push(<Block/>);
         }
         return (
+            <div className={styles.parent}>
                 {Blocks}
+            </div>
         );
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
+import styles from './Block.css'
 
-export default class DateBlock extends React.Component{
+export default class Block extends React.Component{
     constructor(props){
         super(props);
         this.state={
@@ -9,7 +10,7 @@ export default class DateBlock extends React.Component{
 
     render() {
         return (
-            <div/>
+            <div className={styles.parent}/>
         );
     }
 }

@@ -1,0 +1,8 @@
+.main{
+max-width:5vw;
+height:100vh;
+display: grid;
+}
+svg{
+    align-self:center;
+}
