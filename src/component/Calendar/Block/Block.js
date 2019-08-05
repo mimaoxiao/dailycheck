@@ -11,7 +11,7 @@ export default class Block extends React.Component{
     render() {
         return (
             <div className={styles.parent}>
-                1
+                {this.props.date}
             </div>
         );
     }
