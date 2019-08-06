@@ -2,4 +2,10 @@
     font-size: 25px;
     place-self: center center;
     font-weight: bold;
+    height: 100%;
+    width: 100%;
+    border:1px solid blueviolet; 
+}
+.addbutton{
+    padding-top: 10px;
 }

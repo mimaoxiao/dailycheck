@@ -7,7 +7,7 @@ export default class Calendar extends React.Component{
         let Blocks=[];
         for(let i=0;i<this.props.number;i++)
         {
-            Blocks.push(<div className={styles.child}><Block date={i+1}/></div>);
+            Blocks.push(<Block date={i+1}/>);
         }
         return (
             <div className={styles.parent}>
