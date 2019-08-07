@@ -8,6 +8,7 @@ export default class Event extends React.Component{
             keynumber:this.props.keynumber,
             title:this.props.title,
             message:this.props.message,
+            datetime:new Date()
         });
     }
 
@@ -15,7 +16,7 @@ export default class Event extends React.Component{
         return (
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey={this.state.keynumber}>
-                    {this.state.title}
+                    [{this.state.datetime.getHours()}:{this.state.datetime.getMinutes()}]{this.state.title}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={this.state.keynumber}>
                     <Card.Body>
