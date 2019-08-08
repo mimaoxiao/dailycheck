@@ -44,7 +44,7 @@ export default class Block extends React.Component{
     }
 
     AddEvent(){
-        let newEvent=<Event title={this.state.loadTitle} message={this.state.loadMessage} keynumber={this.state.Eventlist.length} />;
+        let newEvent=<Event year={this.props.year} month={this.props.month} date={this.props.date} title={this.state.loadTitle} message={this.state.loadMessage} keynumber={this.state.Eventlist.length} />;
         let newList=this.state.Eventlist;
         newList.push(newEvent);
         this.setState({
