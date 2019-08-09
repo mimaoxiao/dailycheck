@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Block.css';
-import Event from './Event';
+import Event from './Event/Event';
 import { Button,Accordion,Modal,Form } from 'react-bootstrap';
 
 export default class Block extends React.Component{
